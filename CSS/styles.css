@@ -1,0 +1,35 @@
+
+
+/* Headers */
+.font{
+	font-family: Georgia, Serif;
+	font-style: italic;
+	color: DarkGreen;
+	background-color: DarkKhaki;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-shadow:  2px 2px 4px LightYellow;
+
+}
+
+
+table{
+	border: 1px solid DarkKhaki;
+}
+
+th {
+	background-color: DarkKhaki;
+	font-family: Georgia, Serif;
+	font-style: italic;
+	color: DarkGreen;
+	padding: 4px;
+}
+
+td:hover{
+	background-color: DarkKhaki;
+}
+
+ul{
+	list-style-type: square;
+}
+
