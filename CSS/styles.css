@@ -1,35 +1,15 @@
-
-
-/* Headers */
-/*.font{
+h1{
 	font-family: Georgia, Serif;
-	font-style: italic;
-	color: DarkGreen;
-	background-color: DarkKhaki;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	text-shadow:  2px 2px 4px LightYellow;
-
 }
 
-
-table{
-	border: 1px solid DarkKhaki;
+#face{
+	box-shadow: 2px 2px 10px;
+	cursor: pointer;
+	transition: transform 1.5s ease-in-out;
 }
 
-th {
-	background-color: DarkKhaki;
-	font-family: Georgia, Serif;
-	font-style: italic;
-	color: DarkGreen;
-	padding: 4px;
+#face:hover{
+	
+	transform: scale(0.5);
+	background-image: url("../Images/open.png")
 }
-
-td:hover{
-	background-color: DarkKhaki;
-}
-
-ul{
-	list-style-type: square;
-}*/
-
