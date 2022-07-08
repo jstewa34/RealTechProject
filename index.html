@@ -1,132 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Your Name Here</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet/portfolio.css">
+    </head>
 
-<html lang="en">
+    <!--Body-->
+    <body class="Background">
+        
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
 
-	<head>
-		<meta charset="utf-8">
-		<title>Jules Stewart</title>
-		<!-- <script src="JS/javascript.js"></script> -->
-		<link rel = "stylesheet" type = "text/css" href = "CSS/styles.css">
-	</head>
-	
-	<body>
+        <!--Breaks inserted to add space between navbar and the first heading-->
+        <br>
+        <br>
 
-		<!-- Navigation -->
-		<div id=nav>
-			<nav>
-				<ul>
-					<a href="#Home"> Home </a>
-					<a href="#Gallery"> Gallery </a>
-					<a href="#Video"> Video </a>
-					<a href="#Contact"> Contact Us </a>
-				</ul>
-			</nav>
-		</div>
-		<!-- Navigation End -->
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="images/video/Typing.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
 
-		<!-- Home Section -->
-		<div id="Home">
-			<h1>Home</h1>
-			<img id="face" src="Images/icon.png" alt="face">
-			<p>Yosemite National Park in beautiful Mariposa County welcomes you to experience this majestic park in all four seasons. Explore things to do, such as seeing awe-inspiring vistas, granite icons, breath-taking waterfalls, and discovering fascinating history, all while staying in Yosemite and Mariposa County. Whether it’s your first time visiting Yosemite National Park or you’re a seasoned veteran traveler, you’ll always find something new to do here. Search for events, lodging, dining, directions and more.</p>
-		</div>
-		<!-- Home Section End -->
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Jules Stewart</h1>
+            <strong>
+                <p class="center">
+                    <q>Sometimes it is the people no one can imagine anything of who do the things no one can imagine.
+                    </q>
+                    <br> -Alan Turning
+                    <br>
+                    <br> My name is Jules. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                </p>
+            </strong>
+        </div>
 
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="images/self.jpg" alt="Replace with your own image and description">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am a computer science major at the University of Rochester and will be graduating this year.
+                    <br>
+                    <br>I am currently studying cyber security at <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Boot Camp, and trained in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
+                    <br>
+                </p>
+            </div>
+        </div>
 
+        <!--GitHub section-->
+        <div class="Row" id="GitHub">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/jstewa34" target="_blank">The Tech Academy Github</a></p>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/jstewa34" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
 
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_2 Column_tall">
+                <img src="images/self2.jpg" alt="Contact_Image">
+            </div>
+            <!--Contact form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
 
-
-		<!-- Gallery Container -->
-		<div id="Gallery">
-			<h1 > Gallery </h1>
-			
-			<div>
-				<!-- Photo Container -->
-				<div> 
-					<div>
-						<img src="Images/yosemite1.jpg" alt="river">
-						<div>
-							<h2> Click to Enlarge </h2>
-						</div>
-					</div>
-				</div>
-				<!-- Photo Container End-->
-
-				<!-- Photo Container 2-->
-				<div> 
-					<div>
-						<img src="Images/yosemite2.jpg" alt="river2">
-						<div>
-							<h2> Click to Enlarge </h2>
-						</div>
-					</div>
-				</div>
-				<!-- Photo Container 2 End-->
-
-				<!-- Photo Container 3-->
-				<div> 
-					<div>
-						<img src="Images/yosemite3.jpg" alt="watefall">
-						<div>
-							<h2> Click to Enlarge </h2>
-						</div>
-					</div>
-				</div>
-				<!-- Photo Container 3 End-->
-
-				<!-- Photo Container 4-->
-				<div> 
-					<div>
-						<img src="Images/yosemite4.jpg" alt="waterfall2">
-						<div>
-							<h2> Click to Enlarge </h2>
-						</div>
-					</div>
-				</div>
-				<!-- Photo Container 4 End-->
-			<div>
-			
-		</div>
-		<!-- Gallery Container End -->
-
-		<!-- Video Section -->
-		<div id="Video">
-			<h1>Yosesmite Video</h1>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/9fJEFi3ccwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>`
-
-
-		<!-- Contact Form -->
-		<div>
-			<h1 id="Contact" >Contact Us</h1>
-			<form action="" method="get">
-				<input type="text" id="fname" name="fname" placeholder="First Name"><br>
-				<input type="text" id="lname" name="lname" placeholder="Last Name"><br>
-				<input type="text" id="email" name="email" placeholder="Email"><br>
-				<input type="text" id="message" name="message" placeholder="Message"><br>
-			</form>
-			<button onclick="">Submit</button>
-		</div>
-		<!-- Reservations End -->
-
-	</body>
-
-	<footer> 
-		<p>&copy; 2022</p>
-	</footer>
-
+        <!--Footer section-->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+                <br>
+            </p>
+        </footer>
+    </body>
 </html>
-
-
-
-
-
-
-
-<!-- Requirements
-
-4. A section with a video(s) (<iframe> tag, src attribute, etc.).
--->
-
-
-
